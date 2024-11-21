@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- templatemo 413 flip turn -->
+<head>
+	<title>Contacto</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/templatemo_style.css">
+</head>
+<body>
+	<div class="main-container">
+		<nav class="main-nav">
+			<div id="logo" class="left"><a href="#">ARTE</a>
+                <img src="images/icono.jpg" alt="Logo" class="logo">
+			</div>
+			<ul class="nav right center-text">
+				<li class="btn"><a href="index.html">INICIO</a></li>
+				<li class="btn"><a href="about.html">HISTORIA</a></li>
+				<li class="btn"><a href="awards.html">SERVICIOS</a></li>
+				<li class="btn active">CONTACTO</li>
+			</ul>
+		</nav>
+		<div class="content-container">
+			<header>
+				<h1 class="center-text">Contacto</h1>
+				<h2 class="center-text">"El arte es una experiencia personal, y nos gustaría ser parte de la tuya. Si tienes preguntas, inquietudes o te gustaría saber más sobre nuestras pinturas, no dudes en ponerte en contacto con nosotros. Estaremos encantados de atenderte."</h2>
+			</header>
+			<div id="contact-content" class="content">
+				<div class="templatemo_contactmap">
+					<div id="templatemo_map"></div>
+				</div>
+				<form role="form" method="post" action="#">
+					<div class="templatemo_form">
+						<input name="fullname" type="text" class="form-control" id="fullname" placeholder="Nombre" maxlength="40">
+					</div>
+					<div class="templatemo_form">
+						<input name="email" type="text" class="form-control" id="email" placeholder="Email" maxlength="40">
+					</div>
+					<div class="templatemo_form">
+						<textarea name="message" rows="10" class="form-control" id="message" placeholder="Mensaje"></textarea>
+					</div>
+					<div class="templatemo_form">
+						<button type="submit" class="btn btn-primary" id="submitBtn">Enviar Mensaje</button>
+					</div>
+				</form>
+				<p id="mensaje" style="display: none; color: green; font-size: 18px;">¡Mensaje enviado!</p>
+				<address class="content-description">
+					<i class="fa fa-phone"></i> 3837-432348<br>
+					<i class="fa fa-map-marker"></i> Tinogasta-Catamarca-Argentina<br>
+					<i class="fa fa-envelope"></i> <a href="#">rlauraluciana@hotmail.com</a><br>
+				</address>
+			</div>
+		</div> <!-- /.content-container -->
+		<footer>
+			<p>&copy; 2024 Robledo Laura - Todos los derechos reservados</p>
+			<img src="images/icono.png" alt="Icono de pintura" class="logo">
+			<div class="social right">
+				<a href="https://www.facebook.com/la232260au.robledo.35/" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://x.com/lauthekill" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.instagram.com/laau.robledo.35/?next=%2F" target="_blank"><i class="fa fa-instagram"></i></a>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/templatemo_script.js"></script>
+	<script type="text/javascript">
+		loadScript();
+		// Script para mostrar el mensaje de confirmación
+		document.getElementById("submitBtn").addEventListener("click", function(event) {
+			event.preventDefault();
+			// Mostrar el mensaje "¡Mensaje enviado!"
+			document.getElementById("mensaje").style.display = "block";
+			// Limpiar los campos del formulario
+			document.getElementById("fullname").value = "";
+			document.getElementById("email").value = "";
+			document.getElementById("message").value = "";
+			// Hacer que el mensaje desaparezca después de 3 segundos
+			setTimeout(function() {
+				document.getElementById("mensaje").style.display = "none";
+			}, 3000);
+		});
+	</script>
+</body>
+</html>
